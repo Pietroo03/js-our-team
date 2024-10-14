@@ -44,12 +44,10 @@ for (let i = 0; i < teamMembers.length; i++) {
     console.log(member);
     let {name, role, email, img} = member
     let markup = `
-    <div class="col d-flex bg-dark m-2">
-      <div class="">
-        <img src="${img}" alt="" width="80">
-      </div>                         
+    <div class="col-sm-12 col-md-5 col-xl-3 d-flex bg-dark p-0 m-2">
+      <img src="${img}" alt="" width="100">                         
       <div class="ps-2">
-        <div class="text-white">${name}</div>
+        <h5 class="text-white"><strong>${name}</strong></h5>
         <div class="text-white">${role}</div>
         <div class="text-primary">${email}</div>
       </div>
